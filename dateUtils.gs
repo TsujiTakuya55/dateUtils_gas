@@ -20,15 +20,6 @@ function isCompareDate(dateArray) {
 /**
  * 日付オブジェクトを配列に変換
  * @param obj {Object} 日付オブジェクト
- * @return 日付配列
- */
-function convertDate(obj) {
-    return convertDate(obj, 0);
-}
-
-/**
- * 日付オブジェクトを配列に変換
- * @param obj {Object} 日付オブジェクト
  * @param beforeDay {Number} 何日前にするか
  * @return 日付配列
  */
