@@ -9,7 +9,6 @@
 
 ```
 M07BPTtQGkQNczN0EX3cSD6M0nmmJvv15
-
 ```
 
 # How to use
@@ -30,12 +29,12 @@ var dateArray = this.convertDate(dateObj);
 ```
 
 # Requirements
-- google app script
+- [google app script](https://developers.google.com/apps-script/)
 
 # Developed By
 - name : tsuji_takuya
 - Gmail : tsujitakuya50@gmail.com
-- Twitter : @Tsuji_Taku50
+- Twitter : [@Tsuji_Taku50](https://twitter.com/Tsuji_Taku50)
 
 # License
 ```
