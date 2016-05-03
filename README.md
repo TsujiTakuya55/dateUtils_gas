@@ -11,6 +11,10 @@
 M07BPTtQGkQNczN0EX3cSD6M0nmmJvv15
 ```
 
+# Method Collection
+- dateUtils_gasのメソッド
+   https://script.google.com/macros/library/d/19RM8pjTqGrprR9YUAC8cO0xIHKC1cPoiFlmX2uQnIoxG0vAHOKarD9jU/1
+
 # How to use
 こちらに詳しく書きました
 - [GAS(google app scritp)で日付を扱うライブラリを作成しました](http://qiita.com/Tsuji_Taku50/items/aa9753be09a09659a67e#%E5%AE%9F%E7%94%A8%E4%BE%8BÂ)
