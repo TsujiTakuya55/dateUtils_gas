@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dateutils gas by TsujiTakuya55</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Dateutils gas</h1>
+      <h2 class="project-tagline">gas(google app script)のdateライブラリ</h2>
+      <a href="https://github.com/TsujiTakuya55/dateUtils_gas" class="btn">View on GitHub</a>
+      <a href="https://github.com/TsujiTakuya55/dateUtils_gas/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/TsujiTakuya55/dateUtils_gas/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><a href="https://github.com/konifar/fab-transformation/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="GitHub license"></a>
+<a href="https://developers.google.com/apps-script/"><img src="http://img.shields.io/badge/language-javascript-brightgreen.svg?style=flat" alt="Language"></a></p>
+
+<h1>
+<a id="dateutils_gas" class="anchor" href="#dateutils_gas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dateUtils_gas</h1>
+
+<ul>
+<li>google app scritpの日付ライブラリ</li>
+</ul>
+
+<h1>
+<a id="project-key" class="anchor" href="#project-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project key</h1>
+
+<pre><code>M07BPTtQGkQNczN0EX3cSD6M0nmmJvv15
+</code></pre>
+
+<h1>
+<a id="method-collection" class="anchor" href="#method-collection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Method Collection</h1>
+
+<ul>
+<li>dateUtils_gasのメソッド
+<a href="https://script.google.com/macros/library/d/19RM8pjTqGrprR9YUAC8cO0xIHKC1cPoiFlmX2uQnIoxG0vAHOKarD9jU/1">https://script.google.com/macros/library/d/19RM8pjTqGrprR9YUAC8cO0xIHKC1cPoiFlmX2uQnIoxG0vAHOKarD9jU/1</a>
+</li>
+</ul>
+
+<h1>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use</h1>
+
+<p>こちらに詳しく書きました</p>
+
+<ul>
+<li><a href="http://qiita.com/Tsuji_Taku50/items/aa9753be09a09659a67e#%E5%AE%9F%E7%94%A8%E4%BE%8B%C3%82">GAS(google app scritp)で日付を扱うライブラリを作成しました</a></li>
+</ul>
+
+<h1>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h1>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// スプレットシート情報取得</span>
+<span class="pl-k">var</span> ss <span class="pl-k">=</span> <span class="pl-smi">SpreadsheetApp</span>.<span class="pl-en">openById</span>(<span class="pl-s"><span class="pl-pds">'</span>スプレットシートのキー<span class="pl-pds">'</span></span>);
+<span class="pl-c">// シート情報取得</span>
+<span class="pl-k">var</span> s <span class="pl-k">=</span> <span class="pl-smi">ss</span>.<span class="pl-en">getSheetByName</span>(<span class="pl-s"><span class="pl-pds">'</span>シート名<span class="pl-pds">'</span></span>);
+<span class="pl-c">// 日付情報取得(A1 ~ A10までに日付情報が入っている想定)</span>
+<span class="pl-c">// スプレットシートから情報取得した段階ではオブジェクト型</span>
+<span class="pl-k">var</span> dateObj <span class="pl-k">=</span> <span class="pl-smi">s</span>.<span class="pl-en">getRange</span>(<span class="pl-s"><span class="pl-pds">'</span>A1:A10<span class="pl-pds">'</span></span>).<span class="pl-en">getValues</span>();
+<span class="pl-c">// 日付情報をArrayに変換</span>
+<span class="pl-k">var</span> dateArray <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-en">convertDate</span>(dateObj);</pre></div>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<ul>
+<li><a href="https://developers.google.com/apps-script/">google app script</a></li>
+</ul>
+
+<h1>
+<a id="developed-by" class="anchor" href="#developed-by" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developed By</h1>
+
+<ul>
+<li>name : tsuji_takuya</li>
+<li>Gmail : <a href="mailto:tsujitakuya50@gmail.com">tsujitakuya50@gmail.com</a>
+</li>
+<li>Twitter : <a href="https://twitter.com/Tsuji_Taku50">@Tsuji_Taku50</a>
+</li>
+</ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<pre><code>MIT License
+
+Copyright (c) 2016 tsuji_takuya
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/TsujiTakuya55/dateUtils_gas">Dateutils gas</a> is maintained by <a href="https://github.com/TsujiTakuya55">TsujiTakuya55</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
