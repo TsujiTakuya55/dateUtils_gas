@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-- [Project key](#Project key)
+- [Project key](#Project-key)
 - [Method Collection](#Method Collection)
 - [Requirements](#Requirements)
 - [Usage](#Usage)
