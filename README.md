@@ -1,9 +1,8 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/konifar/fab-transformation/blob/master/LICENSE)
-[![Language](http://img.shields.io/badge/language-javascript-brightgreen.svg?style=flat
-)](https://developers.google.com/apps-script/)
-
 # dateUtils_gas
+
 - google app scritpの日付ライブラリ
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/konifar/fab-transformation/blob/master/LICENSE) [![Language](http://img.shields.io/badge/language-javascript-brightgreen.svg?style=flat)](https://developers.google.com/apps-script/)
 
 # Project key
 
@@ -12,15 +11,21 @@ M07BPTtQGkQNczN0EX3cSD6M0nmmJvv15
 ```
 
 # Method Collection
-- dateUtils_gasのメソッド
-   https://script.google.com/macros/library/d/19RM8pjTqGrprR9YUAC8cO0xIHKC1cPoiFlmX2uQnIoxG0vAHOKarD9jU/1
 
-# How to use
+- dateUtils_gasのメソッド <https://script.google.com/macros/library/d/19RM8pjTqGrprR9YUAC8cO0xIHKC1cPoiFlmX2uQnIoxG0vAHOKarD9jU/1>
+
+# Requirements
+
+- [google app script](https://developers.google.com/apps-script/)
+
+# Usage
+
 こちらに詳しく書きました
+
 - [GAS(google app scritp)で日付を扱うライブラリを作成しました](http://qiita.com/Tsuji_Taku50/items/aa9753be09a09659a67e#%E5%AE%9F%E7%94%A8%E4%BE%8BÂ)
 
-# Example
-``` javascript
+- 参考例↓
+```javascript
 // スプレットシート情報取得
 var ss = SpreadsheetApp.openById('スプレットシートのキー');
 // シート情報取得
@@ -32,16 +37,9 @@ var dateObj = s.getRange('A1:A10').getValues();
 var dateArray = this.convertDate(dateObj);
 ```
 
-# Requirements
-- [google app script](https://developers.google.com/apps-script/)
-
-# Developed By
-- name : tsuji_takuya
-- Gmail : tsujitakuya50@gmail.com
-- Twitter : [@Tsuji_Taku50](https://twitter.com/Tsuji_Taku50)
-
 # License
-```
+
+```text
 MIT License
 
 Copyright (c) 2016 tsuji_takuya
@@ -63,5 +61,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 ```
