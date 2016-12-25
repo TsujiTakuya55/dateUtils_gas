@@ -7,10 +7,10 @@
 ## Table of Contents
 
 - [Project key](#project-key)
-- [Method Collection](#method-Collection)
+- [Method Collection](#method-collection)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Support and Migration](#support-and-Migration)
+- [Support and Migration](#support-and-migration)
 - [License](#license)
 
 # Project key
