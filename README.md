@@ -2,7 +2,16 @@
 
 - google app scritpの日付ライブラリ
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/konifar/fab-transformation/blob/master/LICENSE) [![Language](http://img.shields.io/badge/language-javascript-brightgreen.svg?style=flat)](https://developers.google.com/apps-script/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/konifar/fab-transformation/blob/master/LICENSE) [![Language](http://img.shields.io/badge/language-Google app scritp-brightgreen.svg?style=flat)](https://developers.google.com/apps-script/)
+
+## Table of Contents
+
+- [Project key](#Project key)
+- [Method Collection](#Method Collection)
+- [Requirements](#Requirements)
+- [Usage](#Usage)
+- [Support and Migration](#Support and Migration)
+- [License](#License)
 
 # Project key
 
@@ -25,17 +34,24 @@ M07BPTtQGkQNczN0EX3cSD6M0nmmJvv15
 - [GAS(google app scritp)で日付を扱うライブラリを作成しました](http://qiita.com/Tsuji_Taku50/items/aa9753be09a09659a67e#%E5%AE%9F%E7%94%A8%E4%BE%8BÂ)
 
 - 参考例↓
-```javascript
-// スプレットシート情報取得
-var ss = SpreadsheetApp.openById('スプレットシートのキー');
-// シート情報取得
-var s = ss.getSheetByName('シート名');
-// 日付情報取得(A1 ~ A10までに日付情報が入っている想定)
-// スプレットシートから情報取得した段階ではオブジェクト型
-var dateObj = s.getRange('A1:A10').getValues();
-// 日付情報をArrayに変換
-var dateArray = this.convertDate(dateObj);
-```
+
+  ```javascript
+  // スプレットシート情報取得
+  var ss = SpreadsheetApp.openById('スプレットシートのキー');
+  // シート情報取得
+  var s = ss.getSheetByName('シート名');
+  // 日付情報取得(A1 ~ A10までに日付情報が入っている想定)
+  // スプレットシートから情報取得した段階ではオブジェクト型
+  var dateObj = s.getRange('A1:A10').getValues();
+  // 日付情報をArrayに変換
+  var dateArray = this.convertDate(dateObj);
+  ```
+
+# Support and Migration
+
+| :grey_question: | Version | Support End Date |
+|:-----------|------------:|:------------:|
+| :heart:     |      1 |    N/A    |
 
 # License
 
